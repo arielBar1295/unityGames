@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 172568848}
   m_Layer: 0
   m_Name: planet_blue (1)
-  m_TagString: planet
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.8, y: -2.8, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1972886991}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 238109004}
   m_Layer: 0
   m_Name: planet_earth
-  m_TagString: planet
+  m_TagString: P4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,7 +310,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &238109004
 BoxCollider2D:
@@ -350,7 +351,7 @@ GameObject:
   - component: {fileID: 339445661}
   m_Layer: 0
   m_Name: planet_yellow
-  m_TagString: planet
+  m_TagString: P3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,8 +562,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f818dbef3125f4ca19a824afc16e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointP1: 0
-  pointP2: 0
+  pointPlayer1: 0
+  pointPlayer2: 0
+  pointP1: 40
+  pointP2: 30
+  pointP3: 20
+  pointP4: 10
   right: 262
   left: 260
   up: 264
@@ -760,7 +765,7 @@ Transform:
   m_LocalScale: {x: 4, y: 3.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &876016553
 GameObject:
@@ -775,7 +780,7 @@ GameObject:
   - component: {fileID: 876016556}
   m_Layer: 0
   m_Name: planet_blue
-  m_TagString: planet
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,7 +954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661716047
 GameObject:
@@ -984,8 +989,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f818dbef3125f4ca19a824afc16e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointP1: 0
-  pointP2: 0
+  pointPlayer1: 0
+  pointPlayer2: 0
+  pointP1: 10
+  pointP2: 20
+  pointP3: 30
+  pointP4: 40
   right: 275
   left: 276
   up: 273
@@ -1200,7 +1209,7 @@ GameObject:
   - component: {fileID: 1776677023}
   m_Layer: 0
   m_Name: planet_orange
-  m_TagString: planet
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1308,7 +1317,7 @@ GameObject:
   - component: {fileID: 1972886992}
   m_Layer: 0
   m_Name: planet_orange (1)
-  m_TagString: planet
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1370,12 +1379,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972886989}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.3, y: -0.4107914, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.333332, y: 7.964028, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 172568847}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1972886992
 BoxCollider2D:

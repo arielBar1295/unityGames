@@ -7,7 +7,7 @@ public class showPoints : MonoBehaviour
     
     void OnGUI()
     {
-    GUI.Box(new Rect(10, 10, 100, 20), "Score : "+ GameObject.Find("player1").GetComponent<moving_player>().pointP1);
+    GUI.Box(new Rect(10, 10, 100, 20), "Score : "+ GameObject.Find("player1").GetComponent<moving_player>().pointPlayer1);
 
     }
 }

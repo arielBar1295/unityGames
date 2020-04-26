@@ -19,7 +19,7 @@ public class gui1 : MonoBehaviour
     }
     void OnGUI()
     {
-    GUI.Box(new Rect(700, 20, 100, 20), "Score : "+ GameObject.Find("player1").GetComponent<control2Players>().pointP1);
+    GUI.Box(new Rect(500, 10, 100, 20), "Score : "+ GameObject.Find("player1").GetComponent<control2Players>().pointP1);
 
     }
 }
