@@ -21,8 +21,11 @@ public class moving_player : MonoBehaviour
 
     void Update()
     { 
-        if (Input.GetKey(up)) 
-            transform.position += new Vector3(0, stepSize, 0);
+        if (Input.GetKey(up)) {
+          transform.position += new Vector3(0, stepSize, 0);
+          Debug.Log("now moving:"+this.name);
+          }
+            
          if (Input.GetKey(down)) 
             transform.position += new Vector3(0, -stepSize, 0);
          if (Input.GetKey(right)) 

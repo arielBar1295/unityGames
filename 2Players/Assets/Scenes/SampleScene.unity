@@ -568,9 +568,9 @@ MonoBehaviour:
   pointP2: 30
   pointP3: 20
   pointP4: 10
-  right: 262
-  left: 260
-  up: 264
+  right: 257
+  left: 259
+  up: 9
   down: 258
 --- !u!70 &718173112
 CapsuleCollider2D:
