@@ -3,10 +3,13 @@
 <p>Use your mouse to control the sliding platform. The ball will bounce in different directions based on where it hits the platform.  yellow bricks need to be hit once to break and blue bricks twice .</p>
 
 ![](https://media.giphy.com/media/UsNcxFYnFKgT0Hobsm/giphy.gif)
-<h2>The code:</h2>
-<p> There are 4 levels.</p>
-<p>each time the ball hits the floor, start over the level.</p>
-<p>after all the briks are gone,go to the next level.</p>
+<p> There are 4 levels:</p>
+<p>First level - only 5 yellow bricks which disappear by one hit.</p>
+<p>Second level - the number of the yellow bricks increase to 9.</p>
+<p>Third level - in addition to the yellow bricks there are 3 blue bricks which disappear by hit them twice.</p>
+<p>Fourth level - the number of the blue bricks increase to 7 which makes this level the hardest.</p>
+<p>Each time the ball hits the floor, start over the level.</p>
+<p>After all the briks are gone,go to the next level.</p>
 
 
 
