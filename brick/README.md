@@ -4,7 +4,7 @@
 
 ![](https://media.giphy.com/media/UsNcxFYnFKgT0Hobsm/giphy.gif)
 <h2>The code:</h2>
-<p> There are 3 levels.</p>
+<p> There are 4 levels.</p>
 <p>each time the ball hits the floor, start over the level.</p>
 <p>after all the briks are gone,go to the next level.</p>
 
