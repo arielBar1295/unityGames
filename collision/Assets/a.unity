@@ -239,11 +239,9 @@ GameObject:
   m_Component:
   - component: {fileID: 115658186}
   - component: {fileID: 115658185}
-  - component: {fileID: 115658184}
   - component: {fileID: 115658188}
   - component: {fileID: 115658187}
   - component: {fileID: 115658189}
-  - component: {fileID: 115658190}
   m_Layer: 0
   m_Name: chef
   m_TagString: Untagged
@@ -251,18 +249,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &115658184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115658183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04eec03b563799042be230fcb74370e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &115658185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -390,24 +376,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.07, y: 6.12}
   m_EdgeRadius: 0
---- !u!114 &115658190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115658183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4783877d260a9604780175a0b3d21009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: 275
-  left: 276
-  up: 273
-  down: 274
-  stepSize: 0.03
-  mpane: {fileID: 668759393}
 --- !u!1 &129929121
 GameObject:
   m_ObjectHideFlags: 0
