@@ -1,5 +1,5 @@
 # Brick breaker game
-<h2>based on chef game.</h2>
+
 <p>Use your mouse to control the sliding platform. The ball will bounce in different directions based on where it hits the platform.  yellow bricks need to be hit once to break and blue bricks twice .</p>
 
 ![](https://media.giphy.com/media/UsNcxFYnFKgT0Hobsm/giphy.gif)
