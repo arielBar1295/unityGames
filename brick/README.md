@@ -6,8 +6,12 @@
 <h2>The code:</h2>
 <p> There are 3 levels.</p>
 <p>each time the ball hits the floor, start over the level.</p>
-[reload scene](https://github.com/arielBar1295/unity/blob/master/brick/Assets/scripts/floor.cs#L14)
 <p>after all the briks are gone,go to the next level.</p>
-[load next level](https://github.com/arielBar1295/unity/blob/master/brick/Assets/scripts/brick.cs#L79) 
-[The game is here](https://ariel1295.itch.io/brick) 
+
+
+
+* [reload scene](https://github.com/arielBar1295/unity/blob/master/brick/Assets/scripts/floor.cs#L14/)
+* [load next level](https://github.com/arielBar1295/unity/blob/master/brick/Assets/scripts/brick.cs#L79/) 
+* [The game ](https://ariel1295.itch.io/brick/) 
+
 
