@@ -2,7 +2,7 @@
 
 <p>Fun game that simulates flying a drone .</p>
 
-![](https://media.giphy.com/media/Q8BsM5oByIJvwXofSR/giphy.gif)
+![](https://github.com/arielBar1295/unity/blob/master/drone/droneGame.gif)
 
 
 <p>In order to move up and down, use i for up and k for down</p>
