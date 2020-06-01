@@ -8,4 +8,4 @@
 
 * [The drone's movement ](https://github.com/arielBar1295/unity/blob/master/drone/Assets/script/movingDrone.cs)
 * [Countdown timer](https://github.com/arielBar1295/unity/blob/master/drone/Assets/script/Countdown.cs) 
-* [The game ](https://ariel1295.itch.io/brick/) 
+* [The game ](https://ariel1295.itch.io/dronegame) 
