@@ -19,10 +19,10 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        timerSeconds.text = timer.ToString("f2");
+        timerSeconds.text = "Time: "+timer.ToString("f2");
         if(timer<=0)
         {
-            Debug.Log("in if!!");
+          
             Application.LoadLevel(levelTolLoad);
         }
     }

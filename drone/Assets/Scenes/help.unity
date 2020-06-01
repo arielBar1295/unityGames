@@ -464,12 +464,14 @@ MonoBehaviour:
 
 
 
-    To rotate the drone use : k and J
+    To rotate the drone use : H and J
 
     use w,s to turn right
     or left.
 
-    use a,d to move forward and backward'
+    use a,d to move forward and backward
+
+    use I,K for up and down'
 --- !u!222 &826081184
 CanvasRenderer:
   m_ObjectHideFlags: 0
