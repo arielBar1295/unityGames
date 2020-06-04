@@ -6,6 +6,10 @@ TagManager:
   tags:
   - dataCollector
   - planet
+  - redP
+  - blueP
+  - yellowP
+  - purpleP
   layers:
   - Default
   - TransparentFX

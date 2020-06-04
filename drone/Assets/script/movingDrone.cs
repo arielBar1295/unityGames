@@ -7,13 +7,20 @@ public class movingDrone : MonoBehaviour
 {     
     Rigidbody drone;
     [SerializeField] Text scoreT;
+    [SerializeField] int scorePlanetPrurple;
+
+    [SerializeField] int scorePlanetBlue;
+
+    [SerializeField] int scorePlanetYellow;
+
+    [SerializeField] int scorePlanetRed;
+
     int score=0;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         drone=GetComponent<Rigidbody>();
-                 transform.rotation = Quaternion.Euler(0,-93f, 0);
-
+      
     }
 
     // Update is called once per frame
@@ -26,7 +33,7 @@ public class movingDrone : MonoBehaviour
        
         drone.AddRelativeForce(Vector3.up * upForce);
         drone.rotation=Quaternion.Euler(
-            new Vector3(titlAmountForward,currYrotation,drone.rotation.z)
+            new Vector3(0,currYrotation,drone.rotation.z)
         );
     }
     public float upForce;
@@ -45,17 +52,17 @@ public class movingDrone : MonoBehaviour
             upForce=98.1f;
         }
     }
-    private float movementForwardSpeed=500.0f;
-    private float titlAmountForward=0;
-    private float titelVelocityForward;
+    private float movementForwardSpeed=300.0f;
+    private float titlAmountForward;
+        private float titelVelocityForward=0;
+
     void MovementForward()
     {
       if(Input.GetAxis("Vertical") != 0)
       {           
 
-          drone.AddRelativeForce(transform.forward * movementForwardSpeed * Time.deltaTime);
           drone.AddRelativeForce(Vector3.forward * Input.GetAxis("Vertical") * movementForwardSpeed);
-          titlAmountForward=Mathf.SmoothDamp(titlAmountForward, 20 * Input.GetAxis("Vertical"), ref titelVelocityForward ,0.1f);
+           titlAmountForward=Mathf.SmoothDamp(titlAmountForward, 20 * Input.GetAxis("Vertical"), ref titelVelocityForward ,0.1f);
       }
     }
     private float wantedYrotation;
@@ -79,21 +86,33 @@ public class movingDrone : MonoBehaviour
     private float titelamountVel;
     void sides()
     {
-      if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
-      {          
+         
           drone.AddRelativeForce(Vector3.right * Input.GetAxis("Horizontal") * sideAmount);
-          titelamountSides=Mathf.SmoothDamp(titelamountSides, 20 * Input.GetAxis("Horizontal"), ref titelamountVel ,0.1f);
-      }
-      else
-      {
-          titelamountSides=Mathf.SmoothDamp(titelamountSides, 0, ref titelamountVel ,0.1f);
-      }
+
     }
     void OnCollisionEnter(Collision collisionInfo)
 {
-    if(collisionInfo.gameObject.tag=="planet")
+    if(collisionInfo.gameObject.tag=="blueP")
     {   
-        score+=10;
+        score+=scorePlanetBlue;
+        Destroy(collisionInfo.gameObject);
+        scoreT.text="Score:"+score;
+    }
+     if(collisionInfo.gameObject.tag=="redP")
+    {   
+        score+=scorePlanetRed;
+        Destroy(collisionInfo.gameObject);
+        scoreT.text="Score:"+score;
+    }
+     if(collisionInfo.gameObject.tag=="yellowP")
+    {   
+        score+=scorePlanetYellow;
+        Destroy(collisionInfo.gameObject);
+        scoreT.text="Score:"+score;
+    }
+     if(collisionInfo.gameObject.tag=="purpleP")
+    {   
+        score+=scorePlanetPrurple;
         Destroy(collisionInfo.gameObject);
         scoreT.text="Score:"+score;
     }
