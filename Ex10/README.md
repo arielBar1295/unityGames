@@ -3,4 +3,7 @@
 <p>We used different textures and some lighting.</p>
 
 
-* [The drone's movement ](https://github.com/arielBar1295/unity/blob/master/drone/Assets/script/movingDrone.cs) - AddRelativeForce accordingly to the wanted direction, [move up and down]
+* [The scene ](https://oravital7.itch.io/ex10) 
+
+
+![alt text](https://github.com/arielBar1295/unity/blob/master/Ex10/WhatsApp%20Image%202020-06-10%20at%2015.36.35.jpeg)
