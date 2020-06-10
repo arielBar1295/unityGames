@@ -1903,11 +1903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1a2176479d25249ad0674dbfcbdaec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreT: {fileID: 0}
-  scorePlanetPrurple: 10
-  scorePlanetBlue: 20
-  scorePlanetYellow: 30
-  scorePlanetRed: 40
   upForce: 0
 --- !u!1 &984882190
 GameObject:
@@ -2709,7 +2704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477862129}
   m_LocalRotation: {x: 0.45047584, y: -0.0708455, z: 0.03588694, w: 0.88924944}
-  m_LocalPosition: {x: 55.59247, y: 387.91937, z: -339.88675}
+  m_LocalPosition: {x: 403, y: 416, z: -1453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

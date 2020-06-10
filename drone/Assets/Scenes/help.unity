@@ -425,7 +425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.3, y: 9.5}
+  m_AnchoredPosition: {x: -2, y: 9.5}
   m_SizeDelta: {x: 449.3806, y: 315.61163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826081183
@@ -459,19 +459,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-
-
-
-    To rotate the drone use : H and J
-
-    use w,s to turn right
-    or left.
-
-    use a,d to move forward and backward
-
-    use I,K for up and down'
+  m_Text: "WELCOME!\nThank you for choosing to play our game!\r\nYou goal is to collect
+    as many planets as possible.\nTo fly the drone, use I K buttons to move up and
+    down.\nuse W,S to move backwards and forwards\r.\nuse A,D to move right or left.\nYou
+    can practice before the game starts  ENJOY!"
 --- !u!222 &826081184
 CanvasRenderer:
   m_ObjectHideFlags: 0

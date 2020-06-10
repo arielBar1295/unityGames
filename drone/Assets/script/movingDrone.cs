@@ -1,26 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class movingDrone : MonoBehaviour
 {     
-    Rigidbody drone;
-    [SerializeField] Text scoreT;
-    [SerializeField] int scorePlanetPrurple;
-
-    [SerializeField] int scorePlanetBlue;
-
-    [SerializeField] int scorePlanetYellow;
-
-    [SerializeField] int scorePlanetRed;
-
-    int score=0;
-    // Start is called before the first frame update
+     Rigidbody drone;
+   
     void Start()
     {
         drone=GetComponent<Rigidbody>();
-      
+               drone.rotation=Quaternion.Euler(
+            new Vector3(0,-90f,0)
+            
+        );
     }
 
     // Update is called once per frame
@@ -30,10 +23,18 @@ public class movingDrone : MonoBehaviour
         MovementForward();
         Rotation();
         sides();
+
        
-        drone.AddRelativeForce(Vector3.up * upForce);
-        drone.rotation=Quaternion.Euler(
-            new Vector3(0,currYrotation,drone.rotation.z)
+drone.AddRelativeForce(Vector3.up * upForce);
+Vector3 vector;
+vector.x=drone.position.x;
+vector.y=Mathf.Clamp(drone.position.y, 5.225f, 128f);
+vector.z=drone.position.z;
+        drone.position = vector;
+        drone=GetComponent<Rigidbody>();
+               drone.rotation=Quaternion.Euler(
+            new Vector3(0,-90f,0)
+            
         );
     }
     public float upForce;
@@ -41,7 +42,7 @@ public class movingDrone : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.I))
         {
-            upForce=450f;
+            upForce=128f;
         }
         else if(Input.GetKey(KeyCode.K))
         {
@@ -90,33 +91,5 @@ public class movingDrone : MonoBehaviour
           drone.AddRelativeForce(Vector3.right * Input.GetAxis("Horizontal") * sideAmount);
 
     }
-    void OnCollisionEnter(Collision collisionInfo)
-{
-    if(collisionInfo.gameObject.tag=="blueP")
-    {   
-        score+=scorePlanetBlue;
-        Destroy(collisionInfo.gameObject);
-        scoreT.text="Score:"+score;
-    }
-     if(collisionInfo.gameObject.tag=="redP")
-    {   
-        score+=scorePlanetRed;
-        Destroy(collisionInfo.gameObject);
-        scoreT.text="Score:"+score;
-    }
-     if(collisionInfo.gameObject.tag=="yellowP")
-    {   
-        score+=scorePlanetYellow;
-        Destroy(collisionInfo.gameObject);
-        scoreT.text="Score:"+score;
-    }
-     if(collisionInfo.gameObject.tag=="purpleP")
-    {   
-        score+=scorePlanetPrurple;
-        Destroy(collisionInfo.gameObject);
-        scoreT.text="Score:"+score;
-    }
 
-
-         }
-}
+ }
